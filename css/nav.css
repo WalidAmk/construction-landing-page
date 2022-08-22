@@ -1,0 +1,180 @@
+
+:root {
+    --main-color: #f34a04;
+}
+
+nav {
+    width: 100%;
+    background: transparent;
+}
+
+#navInfoContainer {
+    width: 100%;
+    padding: .7rem 100px;
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#textInfoBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.infoBox span {
+    color: white;
+    font-size: .9rem;
+    padding-left: 10px;
+}
+
+.infoBox i {
+    color: rgb(128, 128, 128);
+    font-size: 1rem;
+}
+
+#iconsInfoBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.infoIcon {
+    color: white;
+    font-size: .8rem;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    #navInfoContainer {
+        display: none;
+    }
+}
+
+#navbar {
+    width: 100%;
+    border-top: solid 10px var(--main-color);
+    position: absolute;
+    z-index: 999;
+}
+
+#navbarContainer {
+    width: 1024px;
+    margin: 0 auto;
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, calc(100% - 30px) 100%, 30px 100%);
+    background-color: var(--main-color);
+    padding: 0 50px;
+}
+
+#navbarContainerBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+#navLogo {
+    width: 40px;
+    height: 40px;
+}
+
+#navLogo img {
+    width: 100%;
+    height: 100%;
+}
+
+#navList ul {
+    list-style: none;
+    display: flex;
+}
+
+#navList ul li {
+    padding-left: 30px;
+}
+
+#navList ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: solid 2px transparent;
+    transition: all .3s ease;
+}
+
+#navList ul li a:hover {
+    border-bottom: solid 2px #fff;
+}
+
+#menuBtn {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    #navbar {
+        border-top: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #navbarContainer {
+        width: 100%;
+        margin: 0;
+        -webkit-clip-path: none;
+        clip-path: none;
+        padding: 0 60px;
+    }
+
+    #menuBtn {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    #menuBtn i {
+        color: #fff;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    #navList {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #222222;
+        width: 100%;
+        /* height: 282px; */
+        height: 0;
+        overflow: hidden;
+        transition: all .4s ease;
+    }
+
+    #navList ul {
+        flex-direction: column;
+    }
+
+    #navList ul li {
+        padding: 10px 0 10px 60px;
+        border-bottom: solid 2px #36302e;
+    }
+
+}
+
+@media (max-width: 600px) {
+    #navbarContainer {
+        padding: 0 30px;
+    }
+}
+
+

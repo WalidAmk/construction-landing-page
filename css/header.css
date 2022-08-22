@@ -1,0 +1,125 @@
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+.swiperHeader {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.swiperHeader .swiper-wrapper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+}
+
+.swiperHeader .swiper-wrapper .swiper-slide:nth-child(1) {
+    background-image: url('../assets/images/header1.jpg') !important;
+}
+
+.swiperHeader .swiper-wrapper .swiper-slide:nth-child(2) {
+    background-image: url('../assets/images/header3.jpg') !important;
+}
+
+.swiperHeader .swiper-wrapper .swiper-slide:nth-child(3) {
+    background-image: url('../assets/images/header1.jpg') !important;
+}
+
+.swiperHeader .swiper-wrapper .swiper-slide:nth-child(4) {
+    background-image: url('../assets/images/header3.jpg') !important;
+}
+
+.swiper-slide-box {
+    position: absolute;
+    z-index: 111;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(243, 76, 4, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide-box h2 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-slide-box p {
+    font-size: 1.2rem;
+    text-transform: initial;
+    color: #fff;
+    width: 60%;
+    min-width: 600px;
+    padding-bottom: 30px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-slide-box a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #f34a04;
+    padding: 10px 20px;
+    background-color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: all .4s ease;
+}
+
+.swiper-slide-box a:hover {
+    color: #fff;
+    background-color: #f34a04;
+}
+
+@media (max-width: 1024px) {
+
+    header {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .swiper-slide-box h2 {
+        font-size: 2rem;
+        padding: 0 60px;
+    }
+
+    .swiper-slide-box p {
+        font-size: 1rem;
+        padding: 0 60px;
+        width: 80%;
+        min-width: 600px;
+    }
+
+    .swiper-slide-box a {
+        font-size: 1rem;
+        margin: 30px auto 0 auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .swiper-slide-box h2 {
+        font-size: 1.4rem;
+        padding: 0 20px;
+    }
+
+    .swiper-slide-box p {
+        font-size: 1rem;
+        padding: 0 30px;
+        width: 100%;
+        min-width: 300px;
+    }
+
+    .swiper-slide-box a {
+        font-size: 1rem;
+        margin: 30px auto 0 auto;
+    }
+
+}
